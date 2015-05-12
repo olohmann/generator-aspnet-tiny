@@ -1,0 +1,32 @@
+{
+    "webroot": "<%= wwwRoot %>",
+    "version": "0.1.0-*",
+
+    "dependencies": {
+        "Microsoft.AspNet.Mvc": "6.0.0-beta4",
+        "Microsoft.AspNet.StaticFiles": "1.0.0-beta4",
+        "Kestrel": "1.0.0-beta4"
+    },
+
+    "commands": {
+        "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:1337"
+    },
+
+    "frameworks": {
+        "dnxcore50": {}
+    },
+
+    "exclude": [
+        "wwwroot",
+        "node_modules",
+        "bower_components"
+    ],
+
+    "publishExclude": [
+        "node_modules",
+        "bower_components",
+        "**.xproj",
+        "**.user",
+        "**.vspscc"
+    ]
+}
