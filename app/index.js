@@ -101,6 +101,10 @@ module.exports = yeoman.generators.Base.extend({
 
   install: function() {
     var that = this;
+    if (that.options['skip-install']) {
+      return;
+    }
+
     that.log('Running ' + chalk.yellow.bold('dnu restore') +
       '. If this fails, run the commands ' +
       'yourself. dnu must be configured. See https://github.com/aspnet/dnvm for details.');

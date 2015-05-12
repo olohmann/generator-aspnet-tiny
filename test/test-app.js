@@ -8,8 +8,9 @@ var os = require('os');
 describe('aspnet-tiny:app', function () {
     before(function (done) {
         helpers.run(path.join(__dirname, '../app'))
-        .inDir(path.join(__dirname, './tmp'))  
-        .withPrompts({ appName: 'test-app' })      
+        .inDir(path.join(__dirname, './tmp'))
+        .withArguments(['--skip-install'])
+        .withPrompts({ appName: 'test-app' })
         .on('end', done);
     });
 
