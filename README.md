@@ -1,3 +1,7 @@
+# Deprecated / On Hold.
+
+As there is a lot of movement in the ASP.NET Core toolchain, udpates are suspended until the fog clears..
+
 # generator-aspnet-tiny [![Build Status](https://secure.travis-ci.org/olohmann/generator-aspnet-tiny.png?branch=master)](https://travis-ci.org/olohmann/generator-aspnet-tiny)
 
 > A [Yeoman](http://yeoman.io) generator for tiny [ASP.NET 5](http://www.asp.net/vnext) applications.
